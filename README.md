@@ -1,11 +1,7 @@
 
-# Project Title
+# fantasypremierleagueapi
 
-fantasypremierleagueapi
-
-## Description
-
-A Python wrapper package to interface with Fantasy Premier League's Data API
+## A Python wrapper package to interface with Fantasy Premier League's Data API
 
 ### Prerequisites
 
