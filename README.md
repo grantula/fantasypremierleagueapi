@@ -1,7 +1,8 @@
 
 # fantasypremierleagueapi
 
-## A Python wrapper package to interface with Fantasy Premier League's Data API
+## Description
+A Python wrapper package to interface with Fantasy Premier League's Data API
 
 ### Prerequisites
 
