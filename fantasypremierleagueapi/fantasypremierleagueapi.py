@@ -33,7 +33,7 @@ def player(name=None, id=None):
                         "or a player_id.")
     url = '{}/{}'.format(BASE_URL, PLAYER_ENDPOINT)
     if name:
-        id = _player_id_from_name(player_name)
+        id = _player_id_from_name(name)
     return requests.get(url.format(player_id=id)).json()
 
 def _player_id_from_name(name):
@@ -42,8 +42,8 @@ def _player_id_from_name(name):
     Player Name should be a str "LastName,FirstName"
     """
     try:
-        first_name = player_name.split(',')[1].strip()
-        second_name = player_name.split(',')[0].strip()
+        first_name = name.split(',')[1].strip()
+        second_name = name.split(',')[0].strip()
     except IndexError:
         raise TypeError('Please enter a name in format '
                         '"LastName,FirstName"')
