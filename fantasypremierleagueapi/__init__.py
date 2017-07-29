@@ -5,4 +5,4 @@ Path: fantasypremierleague/
 Author: Grant W
 """
 
-from .fantasypremierleagueapi import data, player, team, game
+from .fantasypremierleagueapi import data, player, team, dream_team, top

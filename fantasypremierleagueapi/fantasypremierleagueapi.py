@@ -99,8 +99,20 @@ def _player_info(name=None, id=None):
                    and x['second_name'] == second_name]
     return players
 
-def game():
+def dream_team():
+    """Returns the current dream_team
     """
-    """
+    data_ = data()
+    return [x for x in data_['elements'] if x['in_dreamteam']]
 
-    return {}
+def top(num_results=10, position=None, sort_key='total_points', reverse=False):
+    """Returns the top given number of players overall. If a position
+    is given, we return the top ten in that position.
+    positions = 1 - 2 - 3 - 4 (goalie - def - mid - fwd)
+    """
+    data_ = sorted(data()['elements'],
+                   key = lambda e: e[sort_key],
+                   reverse=reverse)
+    if position:
+        data_ = [x for x in data_ if x['element_type'] == position]
+    return data_[:num_results]
