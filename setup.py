@@ -17,6 +17,6 @@ setup(name='fantasypremierleagueapi',
       license='MIT',
       install_requires=[
       'requests==2.11.1',
-      ]
+      ],
       packages=['fantasypremierleagueapi'],
       zip_safe=False)
