@@ -16,7 +16,7 @@ setup(name='fantasypremierleagueapi',
       author_email='walter.grant.ward@gmail.com',
       license='MIT',
       install_requires=[
-      'requests==2.11.1',
+      'requests>=2.21.0',
       ],
       packages=['fantasypremierleagueapi'],
       zip_safe=False)
